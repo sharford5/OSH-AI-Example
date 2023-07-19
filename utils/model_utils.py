@@ -34,6 +34,11 @@ parameters_fit = {
             'reg__max_depth': [3,5, 7],
             'reg__min_samples_split':[2, 3, 4],
             'reg__random_state' : [0], # Updated from 'seed'
+            },
+    'Neural Network':{
+            # 'pca__n_components': [.1, .3, .5, .7, .9, 1.0],
+            'reg__max_iter': [100,300,500,1000],
+
             }
 }
 
@@ -63,5 +68,9 @@ param_grid = {
             'max_depth': [3,5, 7],
             'min_samples_split':[2, 3, 4],
             'random_state' : [0], # Updated from 'seed'
+            },
+    'Neural Network':{
+            # 'pca__n_components': [.1, .3, .5, .7, .9, 1.0],
+            'max_iter': [100,300,500,1000],
             }
 }
